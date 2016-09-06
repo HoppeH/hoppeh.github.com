@@ -32,6 +32,7 @@ var barrels = [
     'app/tunering',
     'app/turnering',
     'app/turnering/grupper',
+    'app/pagenotfound',
 ];
 var cliSystemConfigPackages = {};
 barrels.forEach(function (barrelName) {

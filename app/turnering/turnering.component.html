@@ -1,8 +1,10 @@
 
 
-<div>
+<a
+[routerLink]="['/turnering', turnering.turneringsId]"
+*ngFor="let turnering of turneringer"
+class="btn btn-default">
+  {{turnering.turneringsNavn}}
+</a>
 
-</div>
-    <p *ngFor="let turnering of turneringer" class="btn btn-default">{{turnering.turneringsNavn}}</p>
-    
-  <nm-grupper></nm-grupper>
+<router-outlet></router-outlet>

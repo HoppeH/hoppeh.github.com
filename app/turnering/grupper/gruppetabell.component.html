@@ -1,6 +1,7 @@
-<div class="col-md-8 gruppe well"><h4>Gruppe Liste</h4>
+<div class="col-md-8 gruppe well col-md-offset-2 "><h4>Gruppe Liste</h4>
   <table border="1">
     <tr>
+      <td class="col-md-1" style="text-align: center;">Plassering</td>
       <td class="col-md-1">Navn</td>
       <td class="col-md-1">Kamper Spilt</td>
 
@@ -8,7 +9,8 @@
       <td class="col-md-1">Kamper Tapt</td>
       <td class="col-md-1"><b>Poeng</b></td>
     </tr>
-    <tr *ngFor="let lag of lagliste">
+    <tr *ngFor="let lag of lagliste;let i = index" >
+      <td class="col-md-1" style="text-align: center;">{{i}}</td>
       <td class="col-md-1">{{lag.lagNavn}}</td>
       <td class="col-md-1">{{lag.kamperVunnet}}</td>
 
@@ -17,4 +19,6 @@
       <td class="col-md-1"><b>{{lag.poeng}}</b></td>
     </tr>
   </table>
+
+  <nm-gruppekamper></nm-gruppekamper>
 </div>
