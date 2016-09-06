@@ -1,0 +1,20 @@
+<div class="col-md-8 gruppe well"><h4>Gruppe Liste</h4>
+  <table border="1">
+    <tr>
+      <td class="col-md-1">Navn</td>
+      <td class="col-md-1">Kamper Spilt</td>
+
+      <td class="col-md-1">Kamper Vunnet</td>
+      <td class="col-md-1">Kamper Tapt</td>
+      <td class="col-md-1"><b>Poeng</b></td>
+    </tr>
+    <tr *ngFor="let lag of lagliste">
+      <td class="col-md-1">{{lag.lagNavn}}</td>
+      <td class="col-md-1">{{lag.kamperVunnet}}</td>
+
+      <td class="col-md-1">{{lag.kamperVunnet}}</td>
+      <td class="col-md-1">{{lag.kamperTapt}}</td>
+      <td class="col-md-1"><b>{{lag.poeng}}</b></td>
+    </tr>
+  </table>
+</div>
